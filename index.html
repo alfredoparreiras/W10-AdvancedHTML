@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,700;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>The Money Mindset</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__title">
+            <h1>The Money Mindset</h1>
+            <h3>living a life of endless possibilities</h3>
+        </div>
+        <div class="header__separator"></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="blog.html" class="blogLink">Blog</a>
+            <a href="aboutMe.html" class="aboutMeLink">About Me</a>
+            <a href="contact.html" class="contactLink">Contact</a>            
+        </nav>
+        <div class="header__separator"></div>
+    </header>
+    <section class="welcome">
+        <div class="video__container">
+            <video playsinline autoplay muted loop >
+                <source src="/src/video/intro.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h1 class="welcome__title">Welcome to knowledge</h1>
+        </div>
+        <p class="welcome__description">Welcome to our financial blog! Here, we strive to provide you with practical and actionable advice on personal finance, investing, and money management.Whether you’re just starting out with managing your finances or you’re an experienced investor looking for new opportunities, we’ve got you covered. Our aim is to empower you with the knowledge and tools you need to make informed financial decisions that will help you reach your goals. From budgeting and saving tips to in-depth analyses of volatile markets, our team of financial experts is dedicated to providing you with the guidance you need to navigate today’s complex financial landscape. Join us on this journey towards financial freedom and success!</p>
+        <a href="blog.html" class="btn welcome__btn">Go to the blog!</a>
+    </section>
+    <footer class="footer">
+        <div class="footer__copy">
+            <p>Copyright © 2023 - The Money Mindset . All rights reserved.</p>
+        </div>
+        <div class="footer__newsletter">
+            <div>
+                <h4>Newsletter</h4>
+                <p>Join my Newsletter for more information about finances, <br>investments and more!</p>
+            </div>
+            <form action="#">
+                <input type="email" name="formEmail" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                <button>Subscribe</button>
+            </form>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,700;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>The Money Mindset</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__title">
+            <h1>The Money Mindset</h1>
+            <h3>living a life of endless possibilities</h3>
+        </div>
+        <div class="header__separator"></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="blog.html" class="blogLink">Blog</a>
+            <a href="aboutMe.html" class="aboutMeLink">About Me</a>
+            <a href="contact.html" class="contactLink">Contact</a>            
+        </nav>
+        <div class="header__separator"></div>
+    </header>
+    <section class="contactMe">
+        <div class="contactMe__form">
+            <h1 class="contactMe__title">Let's get in Touch!</h1>
+            <form action="#" class="contactMe__form">
+                <input type="text" name="formName" placeholder="Name" autofocus>
+                <input type="number" name="formAge" id="formAge" placeholder="Age">
+                <input type="email" name="formEmail" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                <input type="tel" name="formPhone" placeholder="Phone" required pattern="(?:\+?1[-. ]?)?\(?[2-9][0-9]{2}\)?[-. ]?[0-9]{3}[-. ]?[0-9]{4}">
+                <textarea name="contactMe__textArea" id="contactMe__Text" cols="30" rows="15">Send a Message</textarea>
+                <div>
+                    <label for="formTypeMessage">Type of Message</label>
+                    <select name="formTypeMessage" id="formTypeMessage">
+                        <option value="suggestion">Suggestion</option>
+                        <option value="question">Question</option>
+                        <option value="criticize">Criticize</option>
+                    </select>
+                </div>
+                <div class="contactMe__form-Language">
+                    <h4>Preffered Language</h4>
+                    <input type="radio" name="formLanguage" id="English">
+                    <label for="English">English</label>
+                    <input type="radio" name="formLanguage" id="French">
+                    <label for="French">French</label>
+                </div>
+                <div class="contactMe__form-check">
+                    <input type="checkbox" name="termsAndConditions" id="termsAndConditions">
+                    <label for="termsAndConditions">Do you agree with our terms?</label>
+                </div>
+                <div class="contactMe__form-buttons">
+                    <input type="submit" value="Send a Message">
+                    <input type="reset" value="Clear">
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__copy">
+            <p>Copyright © 2023 - The Money Mindset . All rights reserved.</p>
+        </div>
+        <div class="footer__newsletter">
+            <div>
+                <h4>Newsletter</h4>
+                <p>Join my Newsletter for more information about finances, <br>investments and more!</p>
+            </div>
+            <form action="#">
+                <input type="email" name="formEmail" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                <button>Subscribe</button>
+            </form>
+        </div>
+    </footer>
+</body> 
