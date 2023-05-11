@@ -4,6 +4,8 @@
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     color: black;
+    box-sizing: border-box;
+    /* border: 2px dashed limegreen; */
 }
 
 html { 
@@ -157,7 +159,7 @@ a:active {
     top: 2rem;
     line-height: 1.5;
     padding-bottom: 3rem;
-    text-align: justify;
+    text-align: center;
     font-weight: 350;
 }
 
@@ -214,10 +216,9 @@ a:active {
     border-bottom: 1px solid black;
 }
 
-.blog button { 
+.blog .button { 
     padding: .7rem 1rem;
     margin-left: 2rem;
-    border-radius: 10px;
     width: 7.5rem;
 }
 
@@ -258,6 +259,11 @@ a:active {
     font-size: var(--medium-text);
 }
 
+.post__content { 
+    display: flex;
+    flex-direction: column;
+}
+
 .post__date{ 
     margin: 2rem 0;
     display: block;
@@ -274,6 +280,13 @@ a:active {
 .postPage iframe { 
     float: right;
     margin: 0 0 30px 30px;
+}
+
+.post_readMe{ 
+    font-size: calc(var(--normal-text) + 50%);
+    align-self: center;
+    margin-top: 1.5rem;
+
 }
 
 
@@ -294,6 +307,38 @@ a:active {
     
 }
 
+@media screen and (max-width: 400px)
+{
+    .blog__search{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog .button{ 
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .blog { 
+        padding: 0 2rem;
+    }
+
+    .post__image{ 
+        max-width: 100%;
+    }
+
+    .post__title{
+        margin-top: 1.5rem;
+    }
+
+    .post_readMe { 
+        display: block;
+        font-size: var(--normal-text);
+        margin-top: 1.5rem;
+        
+    }
+}
 /* Footer */
 
 .footer { 
@@ -314,6 +359,8 @@ a:active {
     margin-left: 5rem;
     align-items: center;
     justify-content: space-evenly;
+    position: relative;
+    right: 15px;
 }
 
 .footer__newsletter h4 {
@@ -323,28 +370,31 @@ a:active {
 }
 
 .footer input[type="email"]{ 
-    width: 20rem;
+    width: 25rem;
     font-size: var(--normal-text);
-    height: 20px;
-    padding: .7rem 1rem;
+    height: 50px;
+    padding: 1.5rem 1rem;
     margin-left: 5rem;
     outline: none;
 }
 
-.footer button
-{
+.footer .button
+{   
+    width: 20rem;
     margin-left: 1.5rem;
-    padding: 1.1rem;
+    padding: 1.5rem 1rem;
     position: relative;
     top: -1.5px;
-    font-size: calc(var(--normal-text) - 50%);
+    height: 50px;
+    font-size: calc(var(--normal-text) - 20%);
 }
 
 .footer__newsletter p { 
     text-align: left;
 }
 
-@media screen and (max-width: 767px){
+
+@media screen and (max-width: 950px){
     .footer input[type="email"]{ 
         margin-bottom: 10px;
     }
@@ -360,10 +410,51 @@ a:active {
     }
 
     .footer__newsletter {
-    margin-left: 3rem;
+    margin-left: 3rem
 
     }
-  
+}
+
+@media screen and (max-width: 620px){ 
+    .footer__newsletter {
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .footer__newsletter div { 
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    .footer__newsletter div p { 
+        text-align: center;
+    }
+
+    .footer form { 
+        flex-direction: column;
+        width: 100%;
+        align-items: center
+    }
+
+    .footer { 
+        margin: 1rem;
+        margin-bottom: 4rem;
+    }
+
+    .footer input[type="email"]{ 
+        margin-left: 0;
+        width: 80%;
+    }
+
+    .footer .button { 
+        width: 40%;
+        margin-left: 0;
+        margin-top: 1rem;
+
+    }
+
 }
 
 /* AboutMe */
@@ -519,6 +610,21 @@ a:active {
     }
 }
 
+@media screen and (max-width: 400px)
+{
+    .contactMe__form input[type="text"], 
+    .contactMe__form input[type="number"],
+    .contactMe__form input[type="email"], 
+    .contactMe__form input[type="tel"] { 
+        width: 120%;
+    }
+
+    .contactMe{ 
+        width: 90%;
+    }
+}
+
+
 
 
 /* Post Page */
@@ -569,5 +675,11 @@ a:active {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .postPage__text { 
+        margin-bottom: 50px;
     }
 }
